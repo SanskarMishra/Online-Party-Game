@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	font-family: 'Playtime With Hot Toddies', sans-serif;
+}
+
+html {
+  height: 100%;
+  background-image: url("./components/background.png"), radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(14, 96, 107,1) 48%, rgba(22, 151, 166,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.room {
+	height: 100vh;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'SansBlack', sans-serif;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+h1 {
+	font-size: 72	px;
+	text-shadow: 2px 2px 8px #111;
+}
+
+form > input {
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #333e5a;
+	margin-bottom: 10px;
+}
+
+button {
+  background: #333e5a;
+  color: #fff;
+  font-size: 30px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+button:hover {
+  filter: brightness(150%);
+}
+
+video {
+	border-radius: 50%;
+	object-fit: cover;
+	width: 170px;
+	height: 170px;
+}
+/* ADJUST LOBBY FORM AND START IDS FOR LOBBY PAGE */
+#lobby-form {
+	min-width: 50vw;
+	padding: 2vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#sidebar {
+	height: 100%;
+	background-color: white;
+	justify-content: center;
+	position: fixed;
+	z-index: 1;
+	width: 200px;
+	padding: 15px;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.57);
+}
+
+#main {
+	height: 100%;
+	margin-left: 200px;
+	padding: 50px;
+}
+
+.player + .player {
+	margin-top: 15px;
+}
+
+#dev-stats {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: white;
+	border: 3px black solid;
+}
+.prompt {
+  text-align: center;
+}
+
+.vertical-center {
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.infoWindow {
+	/* height: 200px; */
+	/* width: 50%; */
+	/* background-color: greenyellow; */
+	font-size: 40px;
+	font-weight: 100;
+	overflow: hidden; 
+ 	position: relative;
+	text-align: left;
+	color: white;
+}
+.infoWindowBoundingBox {
+	height: 50%;
+	width: 100%;
+}
+
+#player-video {
+	border: 10px solid;
+	border-color: #1A759F;
+}
+h5 { 
+	color: #34A0A4;
+	font-size: medium;
+	text-align: center;
+}
+h6 {
+	text-align: center;
+	color: #184e77;
+	font-size: large;
+}
+#overlay { 
+	position: absolute;
+	z-index: 100;
+	color:white;
+	padding-top: 3ch;
+	margin-bottom: 5%;
+	margin-left: 20px;
+}
+
+#standings1 {
+	color: #99D98C;
+}
+#standings2 {
+	color: #1E6091;
+}
+#standings3{
+	color: #34A0A4;
+}
+
+#instructions {
+	width: 500px;
+	bottom:0;
+	right:0;
+	border: 5px;
+	border-style: dashed;
+	border-radius: 10px;
+	box-shadow: 5px 5px;
+	background-color: #34A0A4;
+	margin-right: 1ch;
+	margin-top: 3ch;
+	padding-top: 1ch;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-bottom: 1ch;
+}
+.prompt-box {
+	height: 40%;
+	border-style: dashed;
+	border-radius: 10px;
+	box-shadow: 5px 5px;
+	font-size: 40px;
+	font-weight: 100;
+	overflow: hidden; 
+ 	position: relative;
+	text-align: left;
+	color: white;
+	background-color: #184e77;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
